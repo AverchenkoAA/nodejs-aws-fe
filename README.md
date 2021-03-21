@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## See results
  S3 bucket link - http://task-2-bucket-aws-4.s3-website-us-east-1.amazonaws.com/ - should return 403 Forbidden
 
- CloudFront URL - dwgz1q98lr4ie.cloudfront.net - should return My Store! web-site with copyright `Copyright © AAA --- My Store 2021.`
+ CloudFront URL - https://dwgz1q98lr4ie.cloudfront.net/ - should return My Store! web-site with copyright `Copyright © AAA --- My Store 2021.`
 
 ## Available Scripts
 
