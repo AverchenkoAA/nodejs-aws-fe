@@ -24,6 +24,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: personalAccount
+  # region: eu-west-1
 
 plugins:
   - serverless-finch
