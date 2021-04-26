@@ -10,7 +10,7 @@ import { Product } from 'models/Product';
 import { formatAsPrice } from 'utils/utils';
 import AddProductToCart from 'components/AddProductToCart/AddProductToCart';
 import axios from 'axios';
-// import API_PATHS from "constants/apiPaths";
+import API_PATHS from 'constants/apiPaths';
 // import productList from './productList.json';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +37,7 @@ export default function Products() {
 
   useEffect(() => {
     axios
-      .get(`https://mxuyp1483j.execute-api.eu-west-1.amazonaws.com/dev/pizzas`)
+      .get(`${API_PATHS.product}/pizzas`)
       .then((res) => setProducts(res.data));
     // setProducts(productList);
   }, []);
