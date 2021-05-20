@@ -43,6 +43,9 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
       console.log('Uploading to: ', response.data)
       const result = await fetch(response.data, {
         method: 'PUT',
+        headers: {
+            'Content-Type': 'text/csv'
+        },
         body: file
       })
       console.log('Result: ', result)
@@ -56,7 +59,7 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
         {title}
       </Typography>
       {!file ? (
-          <input type="file" onChange={onFileChange}/>
+          <input type="file" accept="text/csv" onChange={onFileChange}/>
       ) : (
         <div>
           <button onClick={removeFile}>Remove file</button>
